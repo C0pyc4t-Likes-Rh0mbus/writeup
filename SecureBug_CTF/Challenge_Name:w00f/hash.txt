@@ -1,0 +1,19 @@
+Cookie: session=757365723d61756469746f7226726f6c653d61756469746f72; 
+signature=9cdc8cbee716e38a1549f52a797fc4466e826097
+
+
+./hash_extender -d "user=auditor&role=auditor" -a "&role=admin"  -l 38 -s 9cdc8cbee716e38a1549f52a797fc4466e826097 --table
+
+
+./hash_extender -d "user=auditor&role=admin" -a "&role=admin" -s 9cdc8cbee716e38a1549f52a797fc4466e826097 -f sha1 --secret 38
+
+
+
+./hash_extender -d "user=auditor&role=auditor" -a "&role=admin" -s 9cdc8cbee716e38a1549f52a797fc4466e826097 -f sha1 --secret 38
+
+
+
+757365723d61756469746f7221f826726f6c653d61646d696e
+
+757365723d61756469746f72267226726f6c653d61646d696e
+8add9dfda0ac2beb46fd8d9bcb5ff3ecca643db1
